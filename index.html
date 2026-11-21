@@ -3,60 +3,92 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Keeperling – Tiere verstehen, Zoo gestalten</title>
-<meta name="description" content="Keeperling ist ein werbefreies Lernspiel für Kinder von 5 bis 10 Jahren: Gehege bauen, Tiere richtig füttern und ihr Verhalten beobachten.">
-<style>
-:root{--bg:#fbf6ec;--fg:#3b3226;--muted:#7a6a55;--accent:#e08a3c;--card:#fff;--line:#eadfcc}
-@media (prefers-color-scheme:dark){:root{--bg:#1f1b16;--fg:#f3ead9;--muted:#bfae93;--accent:#f0a35e;--card:#2a251e;--line:#3d352b}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
-main{max-width:860px;margin:0 auto;padding:40px 16px 60px}
-header h1{font-size:2.6rem;margin:0}header p{font-size:1.2rem;color:var(--muted);margin:.3rem 0 0}
-.lang{float:right;font-size:.95rem}.lang a{color:var(--accent)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:32px 0}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
-.card h3{margin:0 0 6px}h2{margin-top:40px}
-footer{border-top:1px solid var(--line);margin-top:48px;padding-top:16px;color:var(--muted);font-size:.95rem}
-a{color:var(--accent)}
-[lang=en]{display:none}body.en [lang=de]{display:none}body.en [lang=en]{display:block}
-</style>
+<meta name="description" content="Keeperling ist ein werbefreies Lernspiel für Kinder von 5 bis 10 Jahren: 16 Tiere in 6 Gebieten, Sprachförderung, geprüfte Tierfakten, komplett offline.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-<span class="lang"><a href="#" onclick="document.body.classList.toggle('en');return false">Deutsch / English</a></span>
-<header>
+<div class="top"><button class="langbtn" type="button" onclick="document.body.classList.toggle('en');document.documentElement.lang=document.body.classList.contains('en')?'en':'de'">Deutsch / English</button></div>
+<header class="hero">
 <h1>Keeperling</h1>
 <p lang="de">Tiere verstehen, Zoo gestalten. Ein Lernspiel für Kinder von 5 bis 10 Jahren.</p>
 <p lang="en">Understand animals, design your zoo. A learning game for children aged 5 to 10.</p>
+<div lang="de"><span class="soon">Bald im Microsoft Store (Windows) und für iPad</span></div>
+<div lang="en"><span class="soon">Coming soon to the Microsoft Store (Windows) and iPad</span></div>
 </header>
-
 <div lang="de">
 <div class="grid">
-<div class="card"><h3>Gehege bauen</h3>Savanne, Regenwald, Bergwald oder Küste: Welcher Lebensraum passt zu welchem Tier?</div>
+<div class="card"><h3>16 Tiere, 6 Gebiete</h3>Savanne, Regenwald, Bergwald, Küste, Australien und Heimat: Welcher Lebensraum passt zu welchem Tier?</div>
 <div class="card"><h3>Richtig füttern</h3>Fleisch, Heu, Laub oder Fisch? Die Tiere zeigen freundlich, was ihnen schmeckt.</div>
 <div class="card"><h3>Beobachten</h3>Staubbad, Fellpflege, Mittagsschlaf: Wer genau hinschaut, füllt das Tierlexikon.</div>
-<div class="card"><h3>Ohne Druck</h3>Keine Werbung, keine Käufe im Spiel, kein Zeitdruck, keine Datensammlung.</div>
+<div class="card"><h3>Geprüfte Tierfakten</h3>Alle Fakten sind sorgfältig geprüft und kindgerecht formuliert.</div>
 </div>
+<h2>Spielend Sprache fördern</h2>
+<ul class="checks">
+<li><strong>Vorlesen mit Mitlese-Markierung:</strong> Beim Vorlesen wird der gesprochene Text mitmarkiert.</li>
+<li><strong>Wortkarten:</strong> Neue Wörter werden im Lexikon als Karten gesammelt.</li>
+<li><strong>Silbenhilfe:</strong> Lange Wörter lassen sich in Silben aufteilen.</li>
+<li><strong>Zweitsprache:</strong> Texte und Wörter gibt es auch in einer zweiten Sprache.</li>
+</ul>
+<h2>Einblicke</h2>
+<ul class="gallery">
+<li><figure><a href="img/02_zoo_map_start.png"><img src="img/02_zoo_map_start.png" width="1200" height="899" alt="Zoo-Karte zu Beginn des Spiels" loading="lazy"></a><figcaption>Die Zoo-Karte: sechs Gebiete warten darauf, entdeckt zu werden.</figcaption></figure></li>
+<li><figure><a href="img/03b_savanna_lion_feed.png"><img src="img/03b_savanna_lion_feed.png" width="1200" height="899" alt="Löwe in der Savanne beim Füttern" loading="lazy"></a><figcaption>Savanne: Der Löwe zeigt freundlich, was ihm schmeckt.</figcaption></figure></li>
+<li><figure><a href="img/12b_homeland_goat_feed.png"><img src="img/12b_homeland_goat_feed.png" width="1200" height="899" alt="Ziege im Heimat-Gebiet beim Füttern" loading="lazy"></a><figcaption>Heimat: Auch Tiere vor der Haustür werden verständlich.</figcaption></figure></li>
+<li><figure><a href="img/13_homeland_eagle_owl_night.png"><img src="img/13_homeland_eagle_owl_night.png" width="1200" height="899" alt="Uhu bei Nacht im Heimat-Gebiet" loading="lazy"></a><figcaption>Nachts erwachen die Nachtschwärmer, hier der Uhu.</figcaption></figure></li>
+<li><figure><a href="img/16_lexicon_words_syllables.png"><img src="img/16_lexicon_words_syllables.png" width="1200" height="899" alt="Lexikon mit Wortkarten und Silben" loading="lazy"></a><figcaption>Lexikon mit Wortkarten und Silbenhilfe.</figcaption></figure></li>
+<li><figure><a href="img/14_zoo_map_all_unlocked.png"><img src="img/14_zoo_map_all_unlocked.png" width="1200" height="899" alt="Zoo-Karte mit allen freigeschalteten Gebieten" loading="lazy"></a><figcaption>Alle Gebiete freigeschaltet: 16 Tiere in 6 Gebieten.</figcaption></figure></li>
+</ul>
 <h2>Für Eltern</h2>
-<p>Keeperling funktioniert komplett offline. Die Tierfakten sind sorgfältig geprüft und kindgerecht formuliert. Für Kinder von 5 bis 7 gibt es einen Entdecker-Modus mit großen Symbolen, für 8 bis 10 einen Forscher-Modus mit Lesetexten.</p>
-<p><strong>Bald für iPad.</strong> Weitere Plattformen folgen.</p>
+<ul class="checks">
+<li>Keine Werbung, keine Käufe im Spiel, kein Zeitdruck.</li>
+<li>Keine Datensammlung, kein Tracking, kein Mikrofon, keine Konten.</li>
+<li>Funktioniert komplett offline.</li>
+<li>Entdecker-Modus (5 bis 7) mit großen Symbolen, Forscher-Modus (8 bis 10) mit kurzen Lesetexten.</li>
+</ul>
+<p><strong>Bald im Microsoft Store (Windows) und für iPad.</strong></p>
 </div>
-
 <div lang="en">
 <div class="grid">
-<div class="card"><h3>Build habitats</h3>Savanna, rainforest, mountain forest or coast: which habitat suits which animal?</div>
+<div class="card"><h3>16 animals, 6 areas</h3>Savanna, rainforest, mountain forest, coast, Australia and homeland: which habitat suits which animal?</div>
 <div class="card"><h3>Feed them right</h3>Meat, hay, leaves or fish? The animals kindly show you what they like.</div>
 <div class="card"><h3>Observe</h3>Dust baths, grooming, naps: careful watching fills up the animal encyclopedia.</div>
-<div class="card"><h3>No pressure</h3>No ads, no in-game purchases, no timers, no data collection.</div>
+<div class="card"><h3>Checked animal facts</h3>All facts are carefully checked and written for children.</div>
 </div>
+<h2>Language learning through play</h2>
+<ul class="checks">
+<li><strong>Read-aloud with follow-along highlighting:</strong> the spoken text is highlighted as it is read out.</li>
+<li><strong>Word cards:</strong> new words are collected as cards in the encyclopedia.</li>
+<li><strong>Syllable help:</strong> long words can be split into syllables.</li>
+<li><strong>Second language:</strong> texts and words are also available in a second language.</li>
+</ul>
+<h2>Screenshots</h2>
+<ul class="gallery">
+<li><figure><a href="img/02_zoo_map_start.png"><img src="img/02_zoo_map_start.png" width="1200" height="899" alt="Zoo map at the start of the game" loading="lazy"></a><figcaption>The zoo map: six areas waiting to be discovered.</figcaption></figure></li>
+<li><figure><a href="img/03b_savanna_lion_feed.png"><img src="img/03b_savanna_lion_feed.png" width="1200" height="899" alt="Lion in the savanna being fed" loading="lazy"></a><figcaption>Savanna: the lion kindly shows what it likes to eat.</figcaption></figure></li>
+<li><figure><a href="img/12b_homeland_goat_feed.png"><img src="img/12b_homeland_goat_feed.png" width="1200" height="899" alt="Goat in the homeland area being fed" loading="lazy"></a><figcaption>Homeland: animals from right outside the door, explained.</figcaption></figure></li>
+<li><figure><a href="img/13_homeland_eagle_owl_night.png"><img src="img/13_homeland_eagle_owl_night.png" width="1200" height="899" alt="Eagle owl at night in the homeland area" loading="lazy"></a><figcaption>At night the night owls wake up, here the eagle owl.</figcaption></figure></li>
+<li><figure><a href="img/16_lexicon_words_syllables.png"><img src="img/16_lexicon_words_syllables.png" width="1200" height="899" alt="Encyclopedia with word cards and syllables" loading="lazy"></a><figcaption>Encyclopedia with word cards and syllable help.</figcaption></figure></li>
+<li><figure><a href="img/14_zoo_map_all_unlocked.png"><img src="img/14_zoo_map_all_unlocked.png" width="1200" height="899" alt="Zoo map with all areas unlocked" loading="lazy"></a><figcaption>All areas unlocked: 16 animals in 6 areas.</figcaption></figure></li>
+</ul>
 <h2>For parents</h2>
-<p>Keeperling works fully offline. Animal facts are carefully checked and written for children. Kids aged 5 to 7 play in Explorer mode with big symbols, kids aged 8 to 10 in Researcher mode with short texts.</p>
-<p><strong>Coming soon for iPad.</strong> More platforms to follow.</p>
+<ul class="checks">
+<li>No ads, no in-game purchases, no timers.</li>
+<li>No data collection, no tracking, no microphone, no accounts.</li>
+<li>Works fully offline.</li>
+<li>Explorer mode (ages 5 to 7) with big symbols, Researcher mode (ages 8 to 10) with short texts.</li>
+</ul>
+<p><strong>Coming soon to the Microsoft Store (Windows) and iPad.</strong></p>
 </div>
-
 <footer>
-<a href="privacy.html">Datenschutz / Privacy</a> · <a href="imprint.html">Impressum / Imprint</a> · Kontakt / Contact: <a href="mailto:mip@gmx.biz">mip@gmx.biz</a>
+<p><a href="privacy.html">Datenschutz / Privacy</a> · <a href="imprint.html">Impressum / Legal notice</a> · Kontakt / Contact: <a href="mailto:mip@gmx.biz">mip@gmx.biz</a></p>
+<p>© 2026 Minh Nguyen Studios · Michel Nguyen</p>
+<p lang="de">Erstellt mit der Godot Engine. Keine Cookies, keine Tracker, keine externen Skripte.</p>
+<p lang="en">Made with the Godot Engine. No cookies, no trackers, no external scripts.</p>
 </footer>
 </main>
-<script>if(!navigator.language.toLowerCase().startsWith('de'))document.body.classList.add('en')</script>
+<script>if(!navigator.language.toLowerCase().startsWith('de')){document.body.classList.add('en');document.documentElement.lang='en'}</script>
 </body>
 </html>
