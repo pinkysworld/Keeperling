@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keeperling – Tiere verstehen, Zoo gestalten</title>
+<meta name="description" content="Keeperling ist ein werbefreies Lernspiel für Kinder von 5 bis 10 Jahren: Gehege bauen, Tiere richtig füttern und ihr Verhalten beobachten.">
+<style>
+:root{--bg:#fbf6ec;--fg:#3b3226;--muted:#7a6a55;--accent:#e08a3c;--card:#fff;--line:#eadfcc}
+@media (prefers-color-scheme:dark){:root{--bg:#1f1b16;--fg:#f3ead9;--muted:#bfae93;--accent:#f0a35e;--card:#2a251e;--line:#3d352b}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:860px;margin:0 auto;padding:40px 16px 60px}
+header h1{font-size:2.6rem;margin:0}header p{font-size:1.2rem;color:var(--muted);margin:.3rem 0 0}
+.lang{float:right;font-size:.95rem}.lang a{color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:32px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.card h3{margin:0 0 6px}h2{margin-top:40px}
+footer{border-top:1px solid var(--line);margin-top:48px;padding-top:16px;color:var(--muted);font-size:.95rem}
+a{color:var(--accent)}
+[lang=en]{display:none}body.en [lang=de]{display:none}body.en [lang=en]{display:block}
+</style>
+</head>
+<body>
+<main>
+<span class="lang"><a href="#" onclick="document.body.classList.toggle('en');return false">Deutsch / English</a></span>
+<header>
+<h1>Keeperling</h1>
+<p lang="de">Tiere verstehen, Zoo gestalten. Ein Lernspiel für Kinder von 5 bis 10 Jahren.</p>
+<p lang="en">Understand animals, design your zoo. A learning game for children aged 5 to 10.</p>
+</header>
+
+<div lang="de">
+<div class="grid">
+<div class="card"><h3>Gehege bauen</h3>Savanne, Regenwald, Bergwald oder Küste: Welcher Lebensraum passt zu welchem Tier?</div>
+<div class="card"><h3>Richtig füttern</h3>Fleisch, Heu, Laub oder Fisch? Die Tiere zeigen freundlich, was ihnen schmeckt.</div>
+<div class="card"><h3>Beobachten</h3>Staubbad, Fellpflege, Mittagsschlaf: Wer genau hinschaut, füllt das Tierlexikon.</div>
+<div class="card"><h3>Ohne Druck</h3>Keine Werbung, keine Käufe im Spiel, kein Zeitdruck, keine Datensammlung.</div>
+</div>
+<h2>Für Eltern</h2>
+<p>Keeperling funktioniert komplett offline. Die Tierfakten sind sorgfältig geprüft und kindgerecht formuliert. Für Kinder von 5 bis 7 gibt es einen Entdecker-Modus mit großen Symbolen, für 8 bis 10 einen Forscher-Modus mit Lesetexten.</p>
+<p><strong>Bald für iPad.</strong> Weitere Plattformen folgen.</p>
+</div>
+
+<div lang="en">
+<div class="grid">
+<div class="card"><h3>Build habitats</h3>Savanna, rainforest, mountain forest or coast: which habitat suits which animal?</div>
+<div class="card"><h3>Feed them right</h3>Meat, hay, leaves or fish? The animals kindly show you what they like.</div>
+<div class="card"><h3>Observe</h3>Dust baths, grooming, naps: careful watching fills up the animal encyclopedia.</div>
+<div class="card"><h3>No pressure</h3>No ads, no in-game purchases, no timers, no data collection.</div>
+</div>
+<h2>For parents</h2>
+<p>Keeperling works fully offline. Animal facts are carefully checked and written for children. Kids aged 5 to 7 play in Explorer mode with big symbols, kids aged 8 to 10 in Researcher mode with short texts.</p>
+<p><strong>Coming soon for iPad.</strong> More platforms to follow.</p>
+</div>
+
+<footer>
+<a href="privacy.html">Datenschutz / Privacy</a> · <a href="imprint.html">Impressum / Imprint</a> · Kontakt / Contact: <a href="mailto:mip@gmx.biz">mip@gmx.biz</a>
+</footer>
+</main>
+<script>if(!navigator.language.toLowerCase().startsWith('de'))document.body.classList.add('en')</script>
+</body>
+</html>
